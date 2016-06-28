@@ -11,6 +11,7 @@ namespace ReconciliationCalculator
     {
         public  void CalculateReconciliation(FundingClaimReconciliationAllocationGroup reconciliationAllocationGroup, PolicyConfiguration policyConfiguration)
         {
+            //TODO: Guard to be implemented; IoC , Logger
             CalculatePlannedClaimedAndVarianceAtDeliverableGroupLevel(reconciliationAllocationGroup);
 
             CapClaimedValueAtDeliverableGroupLevelIfApplicable(reconciliationAllocationGroup, policyConfiguration);
